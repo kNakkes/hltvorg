@@ -9,11 +9,9 @@ html {
 
 body {
   margin: 0 auto;
-  min-width: 320px;
 }
 
 .navbar {
-  position: relative;
   text-align: center;
   align-items: center;
   margin: 0 auto;
@@ -32,6 +30,7 @@ body {
 }
 
 .navbar > a {
+  transition: all 0.5s ease;
   border-right: 1px solid #e5e7ea;
   font-size: 14px;
   padding: 0 11px;
@@ -39,11 +38,16 @@ body {
   text-decoration: none;
 }
 
+.navbar > a:hover {
+  background-color: #ecedef;
+}
+
 .navbar > a:first-child {
   border-left: 1px solid #e5e7ea;
 }
 
 .input {
+  margin: 0px 15px;
   padding: 5px;
   border: 1px solid #ccc;
 }
@@ -123,6 +127,10 @@ body {
   font-size: 10px;
 }
 
+.todayMatches:hover {
+  background-color: #ecedef;
+}
+
 .colRight2 h1 {
   font-family: Open Sans, sans-serif;
   font-size: 10px;
@@ -132,7 +140,6 @@ body {
 
 .ranking {
   background: #ecedef;
-  width: 160px;
   height: fit-content;
   color: #2d6da3;
   cursor: pointer;
